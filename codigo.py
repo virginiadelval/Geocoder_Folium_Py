@@ -133,7 +133,7 @@ def my_catastro():
                 break
         else:  # condicion inicial si ingresa un valor =0 o <=0
             print(f"El Numero ingresado NO es valido, vuleva a ingresar al sistema")
-            break  # se cierra el sistema
+            break  # se cierra el sistema luego de ejecutar la funcion
         
     '''Solicita al usuario ingresar un Nuemero de catastro'''
 numero = int(input("Ingrese un Número catastro por favor: "))
