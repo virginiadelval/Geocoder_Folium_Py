@@ -1,0 +1,11 @@
+# libreria para una consulta a una API -viene por defecto
+import requests  
+
+# libreria de Geocoder Inversa
+pip install geopy
+from geopy.geocoders import Nominatim 
+
+
+# Libreria de Mapa de Leaflet
+pip install folium
+import folium
