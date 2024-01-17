@@ -1,8 +1,10 @@
 # crear el entorno 
 # instalar el virtualenv
 pip install virtualenv
-# crear la carpeta env en el proyecto porque se instalan los paquetes de manera ahislada ahi
+# crear la carpeta env en el proyecto para que se instalen los paquetes ahi
+
 py -3 -m venv .venv
+
 # levantar el servicio
 .venv\Scripts\activate
 
@@ -11,11 +13,11 @@ py -3 -m venv .venv
 python.exe -m pip install --upgrade pip
 
 # en el etorno de produccion instalar FLASK
-(.venv) C:\CHICOS\CursoPy\tesis>pip install Flask
+(.venv) C:\USER\CursoPy\tesis>pip install Flask
 # abrir el proyecto en code.
-(.venv) C:\CHICOS\CursoPy\tesis>code .	
+(.venv) C:\USER\CursoPy\tesis>code .	
 
-# Crear un py con el nnombre de la applicacion->app.py , aca esta la aplicacion. como en react!!
+# Crear un py con el nombre de la applicacion->app.py , aca esta la aplicacion. como en react(!!)
 
 from flask import Flask # importa el modulo flask
 
@@ -33,6 +35,7 @@ flask --app app --debug run
 #uso de plantillas
 #Generamos la carpta \template y ahi el index.html
 #traemos el complemento de render_template para que se renderice en el DOM
+
 from flask import Flask, render_template 
 
 app = Flask(__name__)
@@ -40,7 +43,5 @@ app = Flask(__name__)
 @app.route("/")  #defino la ruta donde esta el archivo, por defecto template es reconocido
 def index():
     return render_template('index.html') #aca le doy la instruccion
-
-
 
 pip install geopy
